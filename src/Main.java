@@ -41,7 +41,9 @@ public class Main{
                     String nomeInput;
                     int idadeInput;
                     String vilaInput;
-
+                    for (Ninja ninja : listDeNinjas){
+                        ninja.setIdNinja(ninja.getIdNinja() + 1);
+                    }
                     System.out.println("====== Adicionar um ninja na primeira posição. ======");
                     System.out.println("Digite o id do ninja: ");
                     idInput = entradasDeDados.nextInt();
@@ -57,6 +59,9 @@ public class Main{
                     break;
 
                 case 3:
+                    for (Ninja ninja : listDeNinjas){
+                        ninja.setIdNinja(ninja.getIdNinja() - 1);
+                    }
                     System.out.println("====== Remover o primeiro ninja =======");
                     listDeNinjas.removeFirst();
                     break;

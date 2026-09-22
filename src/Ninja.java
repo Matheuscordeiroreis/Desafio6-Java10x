@@ -48,11 +48,10 @@ public class Ninja {
 
     @Override
     public String toString() {
-        return "Ninja{" +
-                "idNinja=" + idNinja +
-                ", Nome='" + Nome + '\'' +
-                ", idade=" + idade +
-                ", Vila='" + Vila + '\'' +
-                '}';
+        return "Ninjas: " +
+                "Id Ninja: " + idNinja + " "+
+                "Nome: " + Nome + " " +
+                "Idade: " + idade + " " +
+                "Vila: " + Vila ;
     }
 }
